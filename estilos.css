@@ -1,0 +1,37 @@
+.topo {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.logo {
+    border: 1px solid red;
+}
+
+.topo .logo img {
+    width: 75px;
+    height: 53px;
+}
+
+.icone {
+    border: 1px solid blue;
+}
+.topo .icone {
+    font-size: 45px;
+}
+
+
+
+.barra-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 375px;
+    height: 80px;
+    border: 1px solid black;
+}
