@@ -3,13 +3,14 @@
     background-color: #ffffff;
     justify-content: space-between;
     align-items: center;
-    width: 375px;
+    width: 100%;
     height: 80px;
     border: 1px solid black;
 }
 
 .logo {
     border: 1px solid red;
+    margin-left: 15px;
 }
 
 .topo .logo img {
@@ -19,11 +20,17 @@
 
 .icone {
     border: 1px solid blue;
+    font-size: 30px;
+    margin-right: 15px;
 }
 .topo .icone {
     font-size: 45px;
 }
 
+
+.conteudo {
+    background-color: #E5E5E5;
+}
 
 
 .barra-inferior {
@@ -31,7 +38,42 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    width: 375px;
+    width: 100%;
     height: 80px;
     border: 1px solid black;
 }
+
+.barra-inferior .campo-texto {
+    width: 300px;
+    border: 1px solid black;
+    margin-left: 15px;
+}
+
+input[type=text] {
+    border: none;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+input[type=text]::placeholder {
+    color: black;
+}
+
+input[type=text] :focus {
+    border: none;
+    box-sizing: border-box;
+}
+
+.mensagem {
+    background-color: #ffffff;
+}
+
+.status {
+    background-color: #DCDCDC;
+}
+
+.reservada {
+    background-color: #FFDEDE;
+}
+
+
