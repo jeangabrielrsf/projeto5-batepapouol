@@ -1,0 +1,5 @@
+from: "Rodrigo"
+text: "entra na sala..."
+time: "05:23:31"
+to: "Todos"
+type: "status"
