@@ -2,7 +2,27 @@
 
 *{
     font-family:'Roboto', sans-serif;
+    box-sizing: border-box;
+
 }
+
+/* .tela-login {
+
+    background-color: #E5E5E5;
+    height: 100vw;
+    width: 100vw;
+    z-index: 10;
+}
+
+.tela-login .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.tela-login .logo img {
+    width: 130px;
+    height: 92px;
+} */
 
 .topo {
     display: flex;
@@ -11,14 +31,14 @@
     align-items: center;
     width: 100%;
     height: 80px;
-    border: 1px solid black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 2;
 }
 
 .logo {
-    border: 1px solid red;
     margin-left: 15px;
 }
 
@@ -28,12 +48,16 @@
 }
 
 .icone {
-    border: 1px solid blue;
     font-size: 30px;
     margin-right: 15px;
 }
 .topo .icone {
     font-size: 45px;
+}
+
+.topo .icone:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 
@@ -51,11 +75,19 @@
     background-color: #ffffff;
     width: 100%;
     height: 80px;
-    border: 1px solid black;
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 2;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
+
+.barra-inferior .icone:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
 
 .barra-inferior .campo-texto {
     width: 300px;
@@ -72,7 +104,6 @@ input[type=text]::placeholder {
     color: black;
 }
 
-input[type=text] :focus,
 input[type=text] :active {
     border: none;
     outline: invisible;
@@ -80,28 +111,33 @@ input[type=text] :active {
 
 .mensagem {
     background-color: #ffffff;
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 400;
 }
 
 .status {
     background-color: #DCDCDC;
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 400;
 }
 
 .reservada {
     background-color: #FFDEDE;
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 400;
 }
 
 .hora {
     color: #AAAAAA;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.41px;
+    
 }
 
 .autor {
     color: #000000;
-    font-size: 14px;
     font-weight: 700;
-    line-height: 16.41px;
     margin-left: 10px;
 }
 
@@ -109,18 +145,20 @@ input[type=text] :active {
 .status,
 .mensagem {
     width: 100%;
-    height: 40px;
+    height: 45px;
     margin: 4px 0px;
     display: flex;
     align-items: center;
+    word-wrap: break-word;
 }
 
 .reservada {
     width: 100%;
-    height: 63px;
+    height: 45px;
     margin: 4px 0px;
     display: flex;
     align-items: center;
+    word-wrap: break-word;
 }
 
 .hora {
@@ -128,6 +166,9 @@ input[type=text] :active {
 }
 
 .destino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 10px;
 }
 
@@ -136,5 +177,57 @@ input[type=text] :active {
 }
 
 .forte {
+    margin-left: 10px;
     font-weight: 700;
+}
+
+
+
+.menu-lateral {
+    width: 259px;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+
+.escondido {
+    display: none;
+}
+
+.sombra {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.usuario {
+    margin-left: 10px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+}
+
+.menu-lateral h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+ul.participantes {
+    list-style-type: none;
 }

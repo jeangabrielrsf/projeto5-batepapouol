@@ -9,15 +9,27 @@
     <title>Bate-Papo Uol</title>
 </head>
 <body>
-    <div class="topo">
+
+    <!-- <div class="tela-login">
         <div class="logo">
             <img src="./logo 1.png" alt="">
         </div>
-        <div class="icone">
+        <div class="login">
+            <input type="text">
+            <input type="button">
+        </div>
+    </div> -->
+
+    <div class="topo">
+        <div class="logo">
+            <img src="./logo 1.png" alt="Logo Uol">
+        </div>
+        <div class="icone" onclick="mostrarSidebar()">
             <ion-icon name="people"></ion-icon>
         </div>
     </div>
 
+    <div class="sombra escondido" onclick="esconderSidebar()"></div>
     <div class="conteudo">
         <ul></ul>
     </div>
@@ -26,10 +38,25 @@
         <div class="campo-texto">
             <input  type="text" placeholder="Escreva aqui...">
         </div>
-        <div class="icone" onclick="postarMensagem()">
+        <div class="icone" id="myBtn" onclick="postarMensagem()">
             <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
     </div>    
+
+
+    <div class="menu-lateral escondido">
+        <h3>Participantes Online:</h3>
+        <div>
+            <ul class="participantes"></ul>
+        </div>
+        <!-- <h3>Escolha a visibidilidade:</h3>
+        <div class="visibilidade">
+            <ul>
+                <li>Pública</li>
+                <li>Privada</li>
+            </ul>
+        </div> -->
+    </div>
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
